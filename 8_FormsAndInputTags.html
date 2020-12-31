@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Input Tags</title>
+</head>
+
+<body>
+    <h2>Forms and Input Tags</h2>
+    <form action="data.php">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="myName">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            <label for="role">Role:</label>
+            <input type="text" id="role" name="myRole">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            <label for="eligible">Are you eligible:?</label>
+            <input type="checkbox" name="myEligible" id="eligible">
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender</label>
+            Male: <input type="radio" name="myGender" id="gender">
+            Female: <input type="radio" name="myGender" id="gender">
+            Other: <input type="radio" name="myGender" id="gender">
+        </div>
+        <br>
+        <div>
+            <label for="writebox">Write something about yourself:</label>
+            <br> <textarea name="myText" id="writebox" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="selction">Car:</label>
+            <select name="mySelection" id="selction">
+                <option value="ind">Indica</option>
+                <option value="swift">swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            
+            <input type="submit" value="Submit Now" >
+            <input type="reset" value="Reset Now">
+
+        </div>
+        
+    </form>
+
+</body>
+
+</html>
