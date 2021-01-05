@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woring of CSS</title>
+
+    <!-- Externel CSS > whichever is written after, gets the priority. -->
+
+    <link rel="stylesheet" href="13_inlineStyle.css">
+    
+    <!-- Internal CSS > Inline CSS is given more priority than Internal CSS. -->
+    <style>
+        p{
+            color: blue ;
+            background-color: blueviolet !important;
+        }
+        </style>
+</head>
+<body>
+    <h2>CSS for il,ex,in</h2>
+    <!-- <p style="color: red;">This text is written with inline css properties</p> -->
+    <p >This text is written with inline css properties</p>
+</body>
+</html>
