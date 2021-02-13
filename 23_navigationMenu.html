@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        /* Target the navbar class and apply some css */
+
+        /* Changeing the color  of the navigation bar and makesits end circular */
+        .navbar {
+            background-color: black;
+            border-radius: 30px;
+        }
+
+        /* Make all the nav elements come in single horizontal line */
+        .navbar li {
+            float: left;
+            list-style: none;
+            /* list-style property used to remove all bullet points */
+            margin: 13px 20px;
+        }
+
+        /* the background gets removed as it has been overflown by the parent element. To avoid this, we have to write- */
+        .navbar ul {
+            overflow: auto;
+        }
+
+        /* Add padding to all the elements present in the navbar */
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none; /* For remove underline */
+            color: white;
+        }
+
+        /* Customize the search bar */
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+
+        /* Style the menu available in the navigation bar */
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+
+        /* add the hover effect in all the li’s. */
+        .navbar li a:hover{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- A navigation bar is usually  a list on links so we use list tags -->
+    <!-- Under nav tag we define our lists -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacu Us</a></li>
+            <!-- Insert a search bar in our navigation bar -->
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search this website">
+            </div>
+        </ul>
+    </nav>
+</body>
+
+</html>
