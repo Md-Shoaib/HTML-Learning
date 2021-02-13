@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons and Pseudo Selectors</title>
+</head>
+
+<style>
+    .container {
+        /* Styleing the container */
+        border: 3px solid red;
+        background-color: tomato;
+        padding: 34px;
+        margin: 34px auto;
+        width: 650px;
+    }
+
+    /* Designing the buttons */
+    .btn {
+        /* Using a font for buttons */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* Using font weight for bold and font size*/
+        font-weight: bold;
+        font-size: 12px;
+        /* Use a background color to the buttons */
+        background-color: crimson;
+        /* Padding border */
+        padding: 6px;
+        border: none;
+        /* Use a cursor pointer to the buttons */
+        cursor: pointer;
+        /* Use border radius for curves */
+        border-radius: 4px;
+    }
+
+    /* Anchor tag customization */
+    a {
+        /* To remove the underline in the link */
+        text-decoration: none;
+        /* Make text color black */
+        color: black;
+    }
+
+    /* Using the pseudo selectors for more customization 
+
+     I'm using here pseudo selectors on hyperlink I can also use on any button or something like that for specific change */
+
+    /* Hover -> is used to change the color of text or background of a button as soon as you hover that part */
+    a:hover {
+        color: rgb(5, 0, 0);
+        background-color: rgb(221, 166, 38);
+    }
+
+    /* Visited -> As soon as you visit the anchor tag button and click the link mentioned, it changes its color */
+    a:visited{
+        background-color: yellow;
+    }
+
+    /* Active -> If you visit any button, and click it, it becomes active and showcases with different properties */
+    a:active{
+        background-color: darkblue;
+    }
+</style>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo minima nisi in fugit nihil ut totam quam.
+            Itaque corporis impedit nihil, vero doloremque quia?</p>
+
+        <!-- Creating two type of buttons one normal and another will link to link another website -->
+        <a href="https://google.com" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+
+</html>
