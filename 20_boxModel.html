@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        /* Universal selector using * this */
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container {
+            background-color: rgb(136, 31, 221);
+            border: 3px solid rgb(161, 14, 14);
+
+            /* We can set margin/padding for top, bottom, left and rigt like this */
+
+            /* padding-top: 78px;
+            padding-bottom: 78px;
+            padding-left: 78px;
+            padding-right: 78px; */
+
+            /* Set the margins */
+
+            /* margin-top: 18px;
+            margin-bottom: 24px;
+            margin-right: 40px;
+            margin-left: 40px; */
+
+            /* Also we can write four values at a same time */
+
+            /* Margin/Padding = top, right, bottom left */
+            
+            /* margin: 23px 48px 6px 78px;
+            padding: 3px 56px 6px 78px; */
+
+            /* Also we can write Margin/padding as x y values */
+
+            /* padding/margin: y(top/bottom) x(left/right); */
+
+            padding: 34px 19px;
+            margin: 18px 14px;
+
+            border-radius: 18px;
+            width: 512px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is Heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptas inventore quibusdam
+            autem natus ratione!</p>
+    </div>
+
+
+    <div class="container">
+        <h3>This is Heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptas inventore quibusdam
+            autem natus ratione!</p>
+    </div>
+
+
+    <div class="container">
+        <h3>This is Heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptas inventore quibusdam
+            autem natus ratione!</p>
+    </div>
+</body>
+
+</html>
