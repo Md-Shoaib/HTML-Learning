@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        /* Defining the classes to change specific elements */
+        .container {
+            width: 900px;
+            border: 3px solid rebeccapurple;
+            background-color: rgb(255, 194, 183);
+            margin: 33px auto;
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 18px 18px;
+            background: tomato;
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            clear: both;
+            clear: left;
+            width: 100%;
+        }
+
+        p,
+        h3 {
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: 455px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to your store</h1>
+        <div class="item" id="fruit">
+            <h3>Fruits</h3>
+            <p class="para" id="fruitpara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at
+                molestiae vero culpa laudantium, necessitatibus dicta delectus, praesentium, dignissimos voluptatibus
+                facere numquam nihil esse. Excepturi aut iste doloribus veritatis, iure accusantium tempore dolores ea?
+            </p>
+        </div>
+
+        <div class="item" id="computer">
+            <h3>computer</h3>
+            <p class="para" id="computerpara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at
+                molestiae vero culpa laudantium, necessitatibus dicta delectus, praesentium, dignissimos voluptatibus
+                facere numquam nihil esse. Excepturi aut iste doloribus veritatis, iure accusantium tempore dolores ea?
+            </p>
+        </div>
+
+        <div class="item" id="stationary">
+            <h3>stationary</h3>
+            <p class="para" id="stationarypara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at
+                molestiae vero culpa laudantium, necessitatibus dicta delectus, praesentium, dignissimos voluptatibus
+                facere numquam nihil esse. Excepturi aut iste doloribus veritatis, iure accusantium tempore dolores ea?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
