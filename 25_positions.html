@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        /* Style the container for identify the boxes */
+        .container {
+            border: 2px;
+            background-color: khaki;
+            height: 3444px;
+        }
+        .box {
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block; /* Make all the boxes at oneline */
+        }
+
+        /* Default position of all the boxes in the above image is static. Now, we will change the position from static to relative of box 3. */
+        #box3{
+            /* position: relative; */
+            /* Now, we have changed the position of box3 from relative to absolute.  */
+            /* position: absolute;
+            top: 34px;
+            left: 34px; */
+
+            /* Set position fixed that if we scroll the page the box will stuck at a locataion */
+            /* position: fixed;
+            right: 4px; */
+
+            /* Set position to sticky */
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Creating some boxes for our design -->
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
