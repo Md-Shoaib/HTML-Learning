@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Z Index</title>
+    <style>
+        .box {
+            /* Styling the boxes */
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        /* Customize the boxes */
+        #box1 {
+            background-color: red;
+
+        }
+
+        #box2 {
+            background-color: green;
+            /* Using the visibility property from visible to hidden */
+            /* display:none; - It completely removes an HTML tag from the web page like it was never there.
+               visibility:hidden;  - It makes the tag invisible but will not remove the element, and it will still occupy the space on the page. */
+            /* visibility: hidden; */
+            /* display: none; */
+
+        }
+
+        #box3 {
+            background-color: blue;
+            /* display: none; */
+            /* visibility: hidden; */
+
+            /* Applying the z-index property but before set positons*/
+            position: relative;
+            z-index: 1;
+            /* use top values so we can see the difference */
+            top: 58px;
+        }
+
+        #box4 {
+            background-color: yellow;
+            /* Applying the z-index property but before set positons*/
+            position: relative;
+            z-index: 2;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Defining four boxes -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>
