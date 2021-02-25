@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth child pseudo Selectors</title>
+    <style>
+        /* set the input display as block */
+        input{
+            display: block;
+        }
+
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+
+        /* To select the input of type text only */
+        input[type='text']{
+            padding: 23px;
+            border: 2px solid red;
+        }
+
+        /* by using psedudo selectors, we can target different properties by their attributes */
+        input[type='email']{
+            color: yellow;
+            border: 4px solid black;
+        }
+
+        /* See the nth child pseudo selectors */
+        /* If we target the specific elemnet by their child name */
+        li:nth-child(3){
+            color: cyan;
+        }
+
+        /*  if we want to change the text color to red of every third element of the list, Simple formula */
+        li:nth-child(3n+3){
+            color: red;
+        }
+
+        /* we can select all the even items on the list */
+        li:nth-child(even){
+            background-color: yellow;
+        }
+
+        /* we can select all the odd items on the list */
+        li:nth-child(odd){
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- creating a simple form -->
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_blank">Go to facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item7</li>
+            <li class="item" id="item-8">Item8</li>
+            <li class="item" id="item-9">Item9</li>
+            <li class="item" id="item-10">Item10</li>
+        </ul>
+    </div>
+</body>
+</html>
