@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Property </title>
+    <style>
+        /* reset the margin and paddings already applied */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* Design the box */
+        .box{
+            background: tomato;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 400px;
+            width: 400px;
+
+            /* Apply the transition */
+            transition: all 0.5s ease-in-out;
+        }
+        /* Design the container */
+        .container{
+            height: 80vh;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Aplly the styles and transformation when hover */
+        .box:hover{
+            /* If we want to rotate the box */
+            /* transform: rotate(360deg); */
+
+            /* We can also skew the box through certain degrees. The skew property is used sometimes when we want to put the content on one side or we want to show the 3D effect.  */
+            /* transform: skew(40deg); */
+
+            /* We can also scale the box. The box will become large depending on the values we provide. */
+            /* transform: scale(2); */
+
+            /* We can also translate or move the box in the x or y axis respectively by providing some values. */
+            /* transform: translateX(123px); */
+            /* transform: translateY(123px); */
+
+            /* We can also write them in the same line */
+            /* transform: translate(123px, 123px); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>
