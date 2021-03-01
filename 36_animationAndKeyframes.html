@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation & Keyframes</title>
+    <style>
+        /* Style the container */
+        .container{
+            background-color: greenyellow;
+        }
+
+        /* Style the box */
+        .box{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative; /* The position of the box is set to be relative sothat we cam move it within our webpage */
+
+            /* Creating animation we have to set a name first for our animation */
+            /* animation-name: shoaib; */
+            animation-name: shoaib2; /* Another name for another keyframe */
+            animation-duration: 8s; /* How long our animation will run */
+            animation-iteration-count: 1; /* It is used to decide the number of times the animation wil run */
+            
+            /* If we want to keep the last property applied to the animation then we can set the animation-fil-property as forward */
+            /* animation-fill-mode: forwards; */
+
+            /* Animation Timing Function */
+            /* animation-timing-function:
+            We can define this property with three different values- */
+
+            /* ease-in
+            After applying this, the animation will start slowly and becomes fast towards the end. */
+
+            animation-timing-function:ease-in;
+
+            /* ease-out
+            After applying this, the animation will begin fastly and become slow towards the end. */
+
+            /* animation-timing-function: ease-out; */
+
+            /* ease-in-out
+            After applying this, the animation will start slowly, then become fast in the midway, and ends slowly.  */
+
+            /* animation-timing-function: ease-in-out; */
+
+            /* Animation Delay */
+            /* It is used to define the time after which the animation will start. */
+            /* animation-delay: 3s; */
+
+            /* Animation Direction */
+            /* This property is used to define the direction of the animation. For example, if we select it as reverse, it will move the animation in reverse direction */
+            /* animation-direction: reverse; */
+        }
+
+        /* Now we will define the animation we made  and use the animation*/
+        /* Syntax */
+        @keyframes shoaib{
+            from{
+                width: 200px;
+            }
+
+            to{
+                width: 1400px;
+            }
+        }
+
+        /* Another method of keyframing */
+        @keyframes shoaib2 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Creating simple div -->
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>
