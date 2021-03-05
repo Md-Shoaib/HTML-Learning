@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout in CSS</title>
+    <style>
+        .container {
+            /* Use display as Grid */
+            display: grid;
+
+            /* Use Grid properties */
+            /* grid-template-columns: 300px 100px 100px; */
+            /* grid-template-columns: 300px auto 100px; */
+           /* grid-template-columns: 1fr 4fr 1fr; */ /* 1:4:1 screen ratio */
+           grid-template-columns: repeat(3, auto); /* It will assign the properties depending upon the values provide  */
+
+           /* we can also use grid gap it will give us as a margin */
+           grid-gap: 2rem;
+        }
+
+        .item {
+            background-color: tomato;
+            /* margin: 4px; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <div class="item">This is Item-1</div>
+            <div class="item">This is Item-2</div>
+            <div class="item">This is Item-3</div>
+            <div class="item">This is Item-4</div>
+            <div class="item">This is Item-5</div>
+            <div class="item">This is Item-6</div>
+            <div class="item">This is Item-7</div>
+            <div class="item">This is Item-8</div>
+            <div class="item">This is Item-9</div>
+        </div>
+    </body>
+</body>
+
+</html>
