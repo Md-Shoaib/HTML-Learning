@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rows & Gaps in Grid</title>
+    <style>
+        .box{
+            background-color: red;
+            border: 2px solid black;
+        }
+
+        /* Apply the grid */
+        .grid{
+            display: grid;
+            /* The grid-template-rows property is used to divide the first, second, and third rows in given fractions */
+            grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr; /* The other rows will be set as two times the normal size. */
+
+            grid-template-columns: 1fr 4fr 2fr; /* used to decide the number of columns used in the grid. */
+            
+            grid-gap: 1rem; /* For gap between grid elements */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+    </div>
+</body>
+</html>
