@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts using Grid Template Area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            /* Grid Template Areas we have to make this like a matrix */
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .item {
+            background-color: tomato;
+            border: 3px solid black;
+            padding: 12px 23px;
+        }
+
+        /* Customize the elemnts */
+        #navbar{
+            grid-area: navbar; /* Define the navbar */
+        }
+
+        #section{
+            grid-area: section;
+        }
+
+        #aside{
+            grid-area: aside;
+        }
+
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <div id="navbar" class="item">
+            Home | About | Contact Us
+        </div>
+        <!-- Basic section for description -->
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consecteturorruptiuptas numquam maiores odio consequuntur, quia excepturi. Quo
+            eligendi sequi ea eius quibusdam a ratione?
+        </div>
+        <!-- Aside Section -->
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adip esse ex. Ad aut voluptate recusandae asperiores quas
+            in quos id atque suscipit veritatisn sunt, accusantium, iste inventore provident, officiis est labore
+            similique! Non cumque minus itaque ad voluptate exercitationem!
+        </div>
+        <!-- Footer -->
+        <footer id="footer" class="item">
+            Lorem, ipsum dol Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum veniam doloremque consequatur similique.
+    </div>
+</body>
+
+</html>
