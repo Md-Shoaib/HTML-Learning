@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque commodi esse distinctio libero est eos fugiat
+            vitae ipsa!</p>
+    </div>
+</body>
+<!-- JS -->
+<script>
+    // var string = "This"; // We can also write stringsin single quotes, It is recommended to use double quotes when we are using single quotes between the strings.
+
+    var name = 'Shoaib';
+    var channel = 'StudyWithShoaib';
+    var message = 'Shoaib is a nice person';
+
+    // Template literals. These are written under ` sign(Tilde)
+    var temp = `${name} is a 'nice' person "and" he has a channel called ${channel}`;
+    console.log(temp); // The main benefit of using this method is, we can use both double quotes or single quotes to identify the strings.
+    
+    // To extract the number of characters in a particular string
+    var len = name.length;
+    console.log(`Length of name is ${len}`);
+
+    // escape sequence characters in the Strings
+    console.log("Md Shoaib's \nWorld!")
+
+    // We can Dynamically insert string in our DOM
+    document.getElementById('content').innerHTML = '<h3>this is an h3 heading</h3>'
+    
+</script>
+
+</html>
