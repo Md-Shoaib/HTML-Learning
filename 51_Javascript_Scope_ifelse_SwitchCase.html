@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, If-else Conditionals & Switch Case in JavaScript </title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    var string1 = "This is a string"; // This var is a Global scope
+    // console.log(string1);
+
+    // Scope of a variable 
+    let a = "u"; // let is also a type to declare a variable
+    // It is higly recommended to use let over var
+    {
+        let a = "u6"; // here the scope under this brackets only
+        // console.log(a); 
+    }
+    // console.log(a); // This will display the global variable
+
+    // Constants
+    // const a = "This cannot be changed";
+    // a = "I Want to change this" // this line will create error
+    // console.log(a)
+
+    // Conditional Statements (if-else)
+    let age = 5;
+    if (age > 18) {
+        console.log("You can vote");
+    } else if (age == 5) {
+        console.log("You can play");
+    } else if (age == 6) {
+        console.log("You can play and watch tv");
+    } else {
+        console.log("You just sleep");
+    }
+
+    // switch-case 
+    const cups = 25;
+    switch (cups) {
+        case 25:
+            console.log("The Value of cup is 25");
+            break;
+        case 25:
+            console.log("The Value of cup is 25");
+            break;
+        case 2:
+            console.log("The Value of cup is 2");
+            break;
+        case 5:
+            console.log("The Value of cup is 5");
+            break;
+        default:
+            break;
+    }
+</script>
+
+</html>
