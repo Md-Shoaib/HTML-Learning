@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Listening to Events</title>
+</head>
+<style>
+    #btn {
+        padding: 10px 14px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <!-- Here are some examples of HTML events:
+
+    An HTML web page has finished loading
+    An HTML input field was changed
+    An HTML button was clicked -->
+
+    <!-- Here is a list of some common HTML events-
+
+    Onchange-  An HTML element has been changed
+    Onclick- The user clicks an HTML element
+    Onmouseover-   The user moves the mouse over an HTML element
+    Onmouseout-The user moves the mouse away from an HTML element
+    Onkeydown- The user pushes a keyboard key
+    Onload- The browser has finished loading the page -->
+
+    <div class="container">
+        <h1>This is my Heading</h1>
+        <p id="para">Loremons! Atqu similiqu Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            ratione assumenda vitae, iusto vero fugiat quasi esse voluptate quis doloribus laboriosam beatae ab
+            doloremque mollitia aut iste dolore cum voluptatem modi tempore. Non, a temporibus? Sapiente voluptatem
+            voluptate dolorum eos reprehenderit labore quidem exercitationem iusto, quos distinctio similique obcaecati
+            recusandae, tempora minus veritatis nulla. Ab? e facilis, mollitia sndis perferendis eligendi veritatis
+            accusamus earum magni commodi autem volupt?</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        // Function to hide/show content
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if (para.style.display != 'none') {
+                para.style.display = 'none'
+            } else {
+                para.style.display = 'block';
+            }
+        }
+
+        // In the same way, there is another event listener known as a mouseover.
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run() {
+            console.log('Mouse Inside')
+        });
+
+        para.addEventListener('mouseout', function run() {
+            console.log('Mouse Outside')
+        });
+
+    </script>
+</body>
+
+</html>
