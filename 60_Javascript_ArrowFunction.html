@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions In JavaScript</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to this, arguments, super or new.target keywords. Arrow function expressions are ill-suited as methods, and they cannot be used as constructors.
+
+    // Basic example of a function
+    // function greet() {
+    //     console.log('Good Morning');    
+    // }
+
+    // greet();
+
+    // But if we write the same function with the help of arrow functions then our work will reduce
+    // Arrow Function
+    // let greet = () => {
+    //     console.log('Good Morning');
+    // }
+
+    // greet();
+
+    // We will get the same output as the above after executing this code. This function can also be used with the setTimeout() function
+    // setTimeout(() => {
+    //     console.log("We are inside setTimeOut Function");
+    // }, 3000);
+
+    // We can also simply add the two numbers with the arrow functions as follows-
+    // let sum2 = (a,b) => a+b;
+
+    // If we have any single variable in our code, then we don’t need to put any braces also. 
+    // let half = a => a/2;
+
+    // Now let us see the use of lexical this with the help of an example. If we make the object obj1 and an array of names and then make a function as speak which does the following task as follows-
+    // let obj1 = {
+    //     names: ["Shoaib", "Aditya", "Mishra", "Rohan"],
+    //     speak(){
+    //         this.names.forEach((student) => {
+    //             console.log("Hello Dear " + student);
+    //         });
+    //     }
+    // }
+    // obj1.speak();
+
+    // In the above example, we have made a speak function, add a forEach() loop to it, and then added an arrow function. But if we add a variable greeting and add this.greeting inside the console.log as follows-
+    let obj1 = {
+        greeetings: "Good Morning",
+        names: ["Shoaib", "Aditya", "Mishra", "Rohan"],
+        speak() {
+            this.names.forEach((student) => {
+                console.log(this.greeetings + " Hello Dear " + student);
+            });
+        }
+    }
+    obj1.speak();
+    // This variable is normally used to point the variable inside the function. But in the case of arrow functions, it points the variable outside the function. This is known as lexical this.
+
+</script>
+
+</html>
