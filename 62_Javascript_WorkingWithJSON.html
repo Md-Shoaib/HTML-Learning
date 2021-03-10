@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with JSON</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // JSON is a format for storing and transporting data. JSON is often used when data is sent from a server to a web page.
+
+    // What is JSON?
+
+    // JSON is a lightweight data-interchange format
+    // JSON stands for JavaScript Object Notation
+    // JSON is "self-describing" and easy to understand
+    // JSON is language independent
+
+    // The JSON syntax is derived from JavaScript object notation syntax, but the JSON format is text only. The code for reading and generating JSON data can be written in any programming language.
+
+    // JSON
+    let jsonObj = {
+        name: "Ranjit",
+        channel: "StudyWithShoaib",
+        friend: "Rajat Das",
+        food: "Chicken"
+    }
+    console.log(jsonObj);
+
+    // Now if we want to transport these properties using JSON, the question arises, we can do it normally one by one; why there is need for JSON? In some cases, we will have nested objects. Then, in that case, it is difficult to transport each property of the object and convert it into a string to parse them. In such cases, we take the help of JSON.
+    // Let us now see, how to stringify the above object.
+    let myJsonStr = JSON.stringify(jsonObj);
+    // console.log(myJsonStr); //The stringify function is used to convert a valid JavaScript object into a string.
+
+    // Once, this object is converted into a string, we can apply all the string functions to it. For example, if we want to replace
+    myJsonStr = myJsonStr.replace("Ranjit", "Rajat");
+    console.log(myJsonStr);
+
+    // Now to convert this string again into an object,
+    newJsonObj = JSON.parse(myJsonStr);
+    console.log(newJsonObj);
+
+</script>
+
+</html>
